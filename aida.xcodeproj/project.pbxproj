@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71A831721FE001C800FA743D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A831711FE001C800FA743D /* AppDelegate.swift */; };
+		71A831741FE001C800FA743D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A831731FE001C800FA743D /* ViewController.swift */; };
+		71A831771FE001C800FA743D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71A831751FE001C800FA743D /* Main.storyboard */; };
+		71A831791FE001C800FA743D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71A831781FE001C800FA743D /* Assets.xcassets */; };
+		71A8317C1FE001C800FA743D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71A8317A1FE001C800FA743D /* LaunchScreen.storyboard */; };
+		71A831871FE001C800FA743D /* aidaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A831861FE001C800FA743D /* aidaTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		71A831831FE001C800FA743D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71A831661FE001C800FA743D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71A8316D1FE001C800FA743D;
+			remoteInfo = aida;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		71A8316E1FE001C800FA743D /* aida.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aida.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71A831711FE001C800FA743D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		71A831731FE001C800FA743D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		71A831761FE001C800FA743D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		71A831781FE001C800FA743D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71A8317B1FE001C800FA743D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		71A8317D1FE001C800FA743D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71A831821FE001C800FA743D /* aidaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aidaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71A831861FE001C800FA743D /* aidaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aidaTests.swift; sourceTree = "<group>"; };
+		71A831881FE001C800FA743D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71A8316B1FE001C800FA743D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71A8317F1FE001C800FA743D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71A831651FE001C800FA743D = {
+			isa = PBXGroup;
+			children = (
+				71A831701FE001C800FA743D /* aida */,
+				71A831851FE001C800FA743D /* aidaTests */,
+				71A8316F1FE001C800FA743D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		71A8316F1FE001C800FA743D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71A8316E1FE001C800FA743D /* aida.app */,
+				71A831821FE001C800FA743D /* aidaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71A831701FE001C800FA743D /* aida */ = {
+			isa = PBXGroup;
+			children = (
+				71A831711FE001C800FA743D /* AppDelegate.swift */,
+				71A831731FE001C800FA743D /* ViewController.swift */,
+				71A831751FE001C800FA743D /* Main.storyboard */,
+				71A831781FE001C800FA743D /* Assets.xcassets */,
+				71A8317A1FE001C800FA743D /* LaunchScreen.storyboard */,
+				71A8317D1FE001C800FA743D /* Info.plist */,
+			);
+			path = aida;
+			sourceTree = "<group>";
+		};
+		71A831851FE001C800FA743D /* aidaTests */ = {
+			isa = PBXGroup;
+			children = (
+				71A831861FE001C800FA743D /* aidaTests.swift */,
+				71A831881FE001C800FA743D /* Info.plist */,
+			);
+			path = aidaTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		71A8316D1FE001C800FA743D /* aida */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71A8318B1FE001C800FA743D /* Build configuration list for PBXNativeTarget "aida" */;
+			buildPhases = (
+				71A8316A1FE001C800FA743D /* Sources */,
+				71A8316B1FE001C800FA743D /* Frameworks */,
+				71A8316C1FE001C800FA743D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = aida;
+			productName = aida;
+			productReference = 71A8316E1FE001C800FA743D /* aida.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71A831811FE001C800FA743D /* aidaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71A8318E1FE001C800FA743D /* Build configuration list for PBXNativeTarget "aidaTests" */;
+			buildPhases = (
+				71A8317E1FE001C800FA743D /* Sources */,
+				71A8317F1FE001C800FA743D /* Frameworks */,
+				71A831801FE001C800FA743D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71A831841FE001C800FA743D /* PBXTargetDependency */,
+			);
+			name = aidaTests;
+			productName = aidaTests;
+			productReference = 71A831821FE001C800FA743D /* aidaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		71A831661FE001C800FA743D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = bigyelow;
+				TargetAttributes = {
+					71A8316D1FE001C800FA743D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					71A831811FE001C800FA743D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 71A8316D1FE001C800FA743D;
+					};
+				};
+			};
+			buildConfigurationList = 71A831691FE001C800FA743D /* Build configuration list for PBXProject "aida" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 71A831651FE001C800FA743D;
+			productRefGroup = 71A8316F1FE001C800FA743D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71A8316D1FE001C800FA743D /* aida */,
+				71A831811FE001C800FA743D /* aidaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		71A8316C1FE001C800FA743D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71A8317C1FE001C800FA743D /* LaunchScreen.storyboard in Resources */,
+				71A831791FE001C800FA743D /* Assets.xcassets in Resources */,
+				71A831771FE001C800FA743D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71A831801FE001C800FA743D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		71A8316A1FE001C800FA743D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71A831741FE001C800FA743D /* ViewController.swift in Sources */,
+				71A831721FE001C800FA743D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71A8317E1FE001C800FA743D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71A831871FE001C800FA743D /* aidaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		71A831841FE001C800FA743D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71A8316D1FE001C800FA743D /* aida */;
+			targetProxy = 71A831831FE001C800FA743D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		71A831751FE001C800FA743D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71A831761FE001C800FA743D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		71A8317A1FE001C800FA743D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71A8317B1FE001C800FA743D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		71A831891FE001C800FA743D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		71A8318A1FE001C800FA743D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		71A8318C1FE001C800FA743D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V92MEYS6M8;
+				INFOPLIST_FILE = aida/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aida.com.aida;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71A8318D1FE001C800FA743D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V92MEYS6M8;
+				INFOPLIST_FILE = aida/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aida.com.aida;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		71A8318F1FE001C800FA743D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V92MEYS6M8;
+				INFOPLIST_FILE = aidaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aida.com.aidaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/aida.app/aida";
+			};
+			name = Debug;
+		};
+		71A831901FE001C800FA743D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V92MEYS6M8;
+				INFOPLIST_FILE = aidaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aida.com.aidaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/aida.app/aida";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		71A831691FE001C800FA743D /* Build configuration list for PBXProject "aida" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71A831891FE001C800FA743D /* Debug */,
+				71A8318A1FE001C800FA743D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71A8318B1FE001C800FA743D /* Build configuration list for PBXNativeTarget "aida" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71A8318C1FE001C800FA743D /* Debug */,
+				71A8318D1FE001C800FA743D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71A8318E1FE001C800FA743D /* Build configuration list for PBXNativeTarget "aidaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71A8318F1FE001C800FA743D /* Debug */,
+				71A831901FE001C800FA743D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 71A831661FE001C800FA743D /* Project object */;
+}
