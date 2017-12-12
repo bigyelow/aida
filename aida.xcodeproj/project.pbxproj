@@ -18,6 +18,8 @@
 		71A831951FE003D100FA743D /* AIBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A831941FE003D100FA743D /* AIBaseViewController.swift */; };
 		71A831971FE0094300FA743D /* AIBaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A831961FE0094300FA743D /* AIBaseNavigationViewController.swift */; };
 		71A8319C1FE00D8C00FA743D /* AIUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A8319B1FE00D8C00FA743D /* AIUser.m */; };
+		71A831A51FE0115600FA743D /* BaseConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A831A41FE0115600FA743D /* BaseConfiguration.swift */; };
+		71A831A71FE0130800FA743D /* DOUAPIClientExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A831A61FE0130800FA743D /* DOUAPIClientExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		71A831991FE00D8C00FA743D /* aida-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "aida-Bridging-Header.h"; sourceTree = "<group>"; };
 		71A8319A1FE00D8C00FA743D /* AIUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIUser.h; sourceTree = "<group>"; };
 		71A8319B1FE00D8C00FA743D /* AIUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIUser.m; sourceTree = "<group>"; };
+		71A831A41FE0115600FA743D /* BaseConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseConfiguration.swift; sourceTree = "<group>"; };
+		71A831A61FE0130800FA743D /* DOUAPIClientExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DOUAPIClientExtension.swift; sourceTree = "<group>"; };
 		AEA78D0C7BBF014A5071895B /* Pods_aida.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aida.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -112,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				71A831911FE0037600FA743D /* Base */,
+				71A831A01FE00F8700FA743D /* API */,
 				71A831981FE00D6500FA743D /* Model */,
 				71A831711FE001C800FA743D /* AppDelegate.swift */,
 				71A831731FE001C800FA743D /* ViewController.swift */,
@@ -138,6 +143,7 @@
 				71A831921FE003B900FA743D /* AIBaseTabBarController.swift */,
 				71A831941FE003D100FA743D /* AIBaseViewController.swift */,
 				71A831961FE0094300FA743D /* AIBaseNavigationViewController.swift */,
+				71A831A41FE0115600FA743D /* BaseConfiguration.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -150,6 +156,14 @@
 				71A831991FE00D8C00FA743D /* aida-Bridging-Header.h */,
 			);
 			path = Model;
+			sourceTree = SOURCE_ROOT;
+		};
+		71A831A01FE00F8700FA743D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				71A831A61FE0130800FA743D /* DOUAPIClientExtension.swift */,
+			);
+			path = API;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
@@ -333,7 +347,9 @@
 				71A831741FE001C800FA743D /* ViewController.swift in Sources */,
 				71A831951FE003D100FA743D /* AIBaseViewController.swift in Sources */,
 				71A831931FE003B900FA743D /* AIBaseTabBarController.swift in Sources */,
+				71A831A71FE0130800FA743D /* DOUAPIClientExtension.swift in Sources */,
 				71A8319C1FE00D8C00FA743D /* AIUser.m in Sources */,
+				71A831A51FE0115600FA743D /* BaseConfiguration.swift in Sources */,
 				71A831721FE001C800FA743D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
