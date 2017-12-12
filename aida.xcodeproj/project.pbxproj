@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1283B1DE684F5F976E428A6C /* Pods_aida.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA78D0C7BBF014A5071895B /* Pods_aida.framework */; };
 		71A831721FE001C800FA743D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A831711FE001C800FA743D /* AppDelegate.swift */; };
-		71A831741FE001C800FA743D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A831731FE001C800FA743D /* ViewController.swift */; };
 		71A831771FE001C800FA743D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71A831751FE001C800FA743D /* Main.storyboard */; };
 		71A831791FE001C800FA743D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71A831781FE001C800FA743D /* Assets.xcassets */; };
 		71A8317C1FE001C800FA743D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71A8317A1FE001C800FA743D /* LaunchScreen.storyboard */; };
@@ -17,9 +16,11 @@
 		71A831931FE003B900FA743D /* AIBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A831921FE003B900FA743D /* AIBaseTabBarController.swift */; };
 		71A831951FE003D100FA743D /* AIBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A831941FE003D100FA743D /* AIBaseViewController.swift */; };
 		71A831971FE0094300FA743D /* AIBaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A831961FE0094300FA743D /* AIBaseNavigationViewController.swift */; };
-		71A8319C1FE00D8C00FA743D /* AIUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A8319B1FE00D8C00FA743D /* AIUser.m */; };
 		71A831A51FE0115600FA743D /* BaseConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A831A41FE0115600FA743D /* BaseConfiguration.swift */; };
 		71A831A71FE0130800FA743D /* DOUAPIClientExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A831A61FE0130800FA743D /* DOUAPIClientExtension.swift */; };
+		71A831AB1FE017DF00FA743D /* DOUAccountManager+Aida.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831AA1FE017DF00FA743D /* DOUAccountManager+Aida.m */; };
+		71A831B11FE0188F00FA743D /* UserAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831B01FE0188F00FA743D /* UserAccount.m */; };
+		71A831B41FE01AEE00FA743D /* AIUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831B31FE01AEE00FA743D /* AIUser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,6 @@
 		591CC1B0090DBBBEF1222CB4 /* Pods-aida.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aida.debug.xcconfig"; path = "Pods/Target Support Files/Pods-aida/Pods-aida.debug.xcconfig"; sourceTree = "<group>"; };
 		71A8316E1FE001C800FA743D /* aida.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aida.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A831711FE001C800FA743D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		71A831731FE001C800FA743D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		71A831761FE001C800FA743D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		71A831781FE001C800FA743D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71A8317B1FE001C800FA743D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,10 +49,14 @@
 		71A831941FE003D100FA743D /* AIBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIBaseViewController.swift; sourceTree = "<group>"; };
 		71A831961FE0094300FA743D /* AIBaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIBaseNavigationViewController.swift; sourceTree = "<group>"; };
 		71A831991FE00D8C00FA743D /* aida-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "aida-Bridging-Header.h"; sourceTree = "<group>"; };
-		71A8319A1FE00D8C00FA743D /* AIUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIUser.h; sourceTree = "<group>"; };
-		71A8319B1FE00D8C00FA743D /* AIUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIUser.m; sourceTree = "<group>"; };
 		71A831A41FE0115600FA743D /* BaseConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseConfiguration.swift; sourceTree = "<group>"; };
 		71A831A61FE0130800FA743D /* DOUAPIClientExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DOUAPIClientExtension.swift; sourceTree = "<group>"; };
+		71A831A91FE017DF00FA743D /* DOUAccountManager+Aida.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DOUAccountManager+Aida.h"; sourceTree = "<group>"; };
+		71A831AA1FE017DF00FA743D /* DOUAccountManager+Aida.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DOUAccountManager+Aida.m"; sourceTree = "<group>"; };
+		71A831AF1FE0188F00FA743D /* UserAccount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserAccount.h; sourceTree = "<group>"; };
+		71A831B01FE0188F00FA743D /* UserAccount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserAccount.m; sourceTree = "<group>"; };
+		71A831B21FE01AEE00FA743D /* AIUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIUser.h; sourceTree = "<group>"; };
+		71A831B31FE01AEE00FA743D /* AIUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIUser.m; sourceTree = "<group>"; };
 		AEA78D0C7BBF014A5071895B /* Pods_aida.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aida.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -119,7 +123,6 @@
 				71A831A01FE00F8700FA743D /* API */,
 				71A831981FE00D6500FA743D /* Model */,
 				71A831711FE001C800FA743D /* AppDelegate.swift */,
-				71A831731FE001C800FA743D /* ViewController.swift */,
 				71A831751FE001C800FA743D /* Main.storyboard */,
 				71A831781FE001C800FA743D /* Assets.xcassets */,
 				71A8317A1FE001C800FA743D /* LaunchScreen.storyboard */,
@@ -140,10 +143,11 @@
 		71A831911FE0037600FA743D /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				71A831B51FE01DAE00FA743D /* Configuration */,
+				71A831A81FE017BA00FA743D /* User */,
 				71A831921FE003B900FA743D /* AIBaseTabBarController.swift */,
 				71A831941FE003D100FA743D /* AIBaseViewController.swift */,
 				71A831961FE0094300FA743D /* AIBaseNavigationViewController.swift */,
-				71A831A41FE0115600FA743D /* BaseConfiguration.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -151,8 +155,8 @@
 		71A831981FE00D6500FA743D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				71A8319A1FE00D8C00FA743D /* AIUser.h */,
-				71A8319B1FE00D8C00FA743D /* AIUser.m */,
+				71A831B21FE01AEE00FA743D /* AIUser.h */,
+				71A831B31FE01AEE00FA743D /* AIUser.m */,
 				71A831991FE00D8C00FA743D /* aida-Bridging-Header.h */,
 			);
 			path = Model;
@@ -165,6 +169,25 @@
 			);
 			path = API;
 			sourceTree = SOURCE_ROOT;
+		};
+		71A831A81FE017BA00FA743D /* User */ = {
+			isa = PBXGroup;
+			children = (
+				71A831A91FE017DF00FA743D /* DOUAccountManager+Aida.h */,
+				71A831AA1FE017DF00FA743D /* DOUAccountManager+Aida.m */,
+				71A831AF1FE0188F00FA743D /* UserAccount.h */,
+				71A831B01FE0188F00FA743D /* UserAccount.m */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		71A831B51FE01DAE00FA743D /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				71A831A41FE0115600FA743D /* BaseConfiguration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -344,12 +367,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				71A831971FE0094300FA743D /* AIBaseNavigationViewController.swift in Sources */,
-				71A831741FE001C800FA743D /* ViewController.swift in Sources */,
 				71A831951FE003D100FA743D /* AIBaseViewController.swift in Sources */,
 				71A831931FE003B900FA743D /* AIBaseTabBarController.swift in Sources */,
 				71A831A71FE0130800FA743D /* DOUAPIClientExtension.swift in Sources */,
-				71A8319C1FE00D8C00FA743D /* AIUser.m in Sources */,
+				71A831AB1FE017DF00FA743D /* DOUAccountManager+Aida.m in Sources */,
 				71A831A51FE0115600FA743D /* BaseConfiguration.swift in Sources */,
+				71A831B11FE0188F00FA743D /* UserAccount.m in Sources */,
+				71A831B41FE01AEE00FA743D /* AIUser.m in Sources */,
 				71A831721FE001C800FA743D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

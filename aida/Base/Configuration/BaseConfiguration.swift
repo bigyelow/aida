@@ -14,3 +14,8 @@ class BaseConfiguration: NSObject {
   static let bundleID = Bundle.main.bundleIdentifier ?? ""
   static let apiUserAgent = "iOS \(BaseConfiguration.bundleID)/\(BaseConfiguration.appVersion)"
 }
+
+class AccountNotification: NSObject {
+  @objc static let logout = "logout"
+}
+
