@@ -11,11 +11,35 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-  var window: UIWindow?
-
+  var window: UIWindow? = {
+    let window = UIWindow(frame: UIScreen.main.bounds)
+    return window
+  }()
+  let tabbarController: AIBaseTabBarController = AIBaseTabBarController()
+  let questionController: AIBaseViewController = {
+    let controller = AIBaseViewController()
+    controller.title = "答题"
+    controller.view.backgroundColor = UIColor.white
+    return controller
+  }()
+  let rankListController: AIBaseViewController = {
+    let controller = AIBaseViewController()
+    controller.title = "排行榜"
+    controller.view.backgroundColor = UIColor.white
+    return controller
+  }()
+  let mineController: AIBaseViewController = {
+    let controller = AIBaseViewController()
+    controller.title = "我的"
+    controller.view.backgroundColor = UIColor.white
+    return controller
+  }()
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
+    tabbarController.viewControllers = [questionController, rankListController, mineController]
+    window?.rootViewController = tabbarController
+    window?.makeKeyAndVisible()
+
     return true
   }
 
@@ -40,7 +64,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func applicationWillTerminate(_ application: UIApplication) {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
   }
-
-
 }
 
