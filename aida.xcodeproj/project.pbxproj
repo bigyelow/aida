@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1283B1DE684F5F976E428A6C /* Pods_aida.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA78D0C7BBF014A5071895B /* Pods_aida.framework */; };
 		71A831721FE001C800FA743D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A831711FE001C800FA743D /* AppDelegate.swift */; };
 		71A831741FE001C800FA743D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A831731FE001C800FA743D /* ViewController.swift */; };
 		71A831771FE001C800FA743D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71A831751FE001C800FA743D /* Main.storyboard */; };
@@ -26,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3757B7F7B4786DA95509DD65 /* Pods-aida.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aida.release.xcconfig"; path = "Pods/Target Support Files/Pods-aida/Pods-aida.release.xcconfig"; sourceTree = "<group>"; };
+		591CC1B0090DBBBEF1222CB4 /* Pods-aida.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aida.debug.xcconfig"; path = "Pods/Target Support Files/Pods-aida/Pods-aida.debug.xcconfig"; sourceTree = "<group>"; };
 		71A8316E1FE001C800FA743D /* aida.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aida.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A831711FE001C800FA743D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71A831731FE001C800FA743D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		71A831821FE001C800FA743D /* aidaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aidaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A831861FE001C800FA743D /* aidaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aidaTests.swift; sourceTree = "<group>"; };
 		71A831881FE001C800FA743D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEA78D0C7BBF014A5071895B /* Pods_aida.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aida.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1283B1DE684F5F976E428A6C /* Pods_aida.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +61,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3915068234488547558FDDB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				591CC1B0090DBBBEF1222CB4 /* Pods-aida.debug.xcconfig */,
+				3757B7F7B4786DA95509DD65 /* Pods-aida.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		67F69649A6A04C55542524B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEA78D0C7BBF014A5071895B /* Pods_aida.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		71A831651FE001C800FA743D = {
 			isa = PBXGroup;
 			children = (
 				71A831701FE001C800FA743D /* aida */,
 				71A831851FE001C800FA743D /* aidaTests */,
 				71A8316F1FE001C800FA743D /* Products */,
+				3915068234488547558FDDB5 /* Pods */,
+				67F69649A6A04C55542524B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +127,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71A8318B1FE001C800FA743D /* Build configuration list for PBXNativeTarget "aida" */;
 			buildPhases = (
+				745E0F12983F2DE9B97B904C /* [CP] Check Pods Manifest.lock */,
 				71A8316A1FE001C800FA743D /* Sources */,
 				71A8316B1FE001C800FA743D /* Frameworks */,
 				71A8316C1FE001C800FA743D /* Resources */,
+				ACEBFDBC82507860389329FE /* [CP] Embed Pods Frameworks */,
+				F167A10F1269C9AFC3882AEC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +220,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		745E0F12983F2DE9B97B904C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-aida-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACEBFDBC82507860389329FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aida/Pods-aida-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F167A10F1269C9AFC3882AEC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aida/Pods-aida-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		71A8316A1FE001C800FA743D /* Sources */ = {
@@ -351,6 +429,7 @@
 		};
 		71A8318C1FE001C800FA743D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 591CC1B0090DBBBEF1222CB4 /* Pods-aida.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -366,6 +445,7 @@
 		};
 		71A8318D1FE001C800FA743D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3757B7F7B4786DA95509DD65 /* Pods-aida.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
