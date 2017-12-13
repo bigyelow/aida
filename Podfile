@@ -12,4 +12,5 @@ target 'aida' do
   pod 'DOUUserManager',            '1.1.3'
   pod 'DoubanObjCClient',          :git => 'https://github.intra.douban.com/iOS/DoubanObjCClient.git', :commit => '7220a06276c576b5d18f38b6fd3ab771e3a63295'
   pod 'DOUFoundation',             :git => 'https://github.intra.douban.com/iOS/DOUFoundation.git', :commit => 'a40451618d35fe59087eafbb04a5f1a62a8df29f'
+  pod 'FormatterKit/TimeIntervalFormatter',     :git => 'https://github.com/mattt/FormatterKit.git', :commit => '6b5d870377bfac1fd518983f2fe94a9af69a14b9'
 end

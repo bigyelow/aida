@@ -64,6 +64,9 @@ PODS:
   - DOUFoundation/UDID (0.2.15)
   - DOUUserManager (1.1.3):
     - SAMKeychain (~> 1.5.2)
+  - FormatterKit/Resources (1.8.1)
+  - FormatterKit/TimeIntervalFormatter (1.8.1):
+    - FormatterKit/Resources
   - FRDCryptology (0.1.1)
   - libextobjc/EXTScope (0.4.1):
     - libextobjc/RuntimeExtensions
@@ -78,6 +81,7 @@ DEPENDENCIES:
   - DoubanObjCClient (from `https://github.intra.douban.com/iOS/DoubanObjCClient.git`, commit `7220a06276c576b5d18f38b6fd3ab771e3a63295`)
   - DOUFoundation (from `https://github.intra.douban.com/iOS/DOUFoundation.git`, commit `a40451618d35fe59087eafbb04a5f1a62a8df29f`)
   - DOUUserManager (= 1.1.3)
+  - FormatterKit/TimeIntervalFormatter (from `https://github.com/mattt/FormatterKit.git`, commit `6b5d870377bfac1fd518983f2fe94a9af69a14b9`)
   - Polymorph (from `https://github.com/douban/Polymorph.git`, commit `ec503cfe3fcf9e18f8c675175273d5cde608d1e2`)
 
 EXTERNAL SOURCES:
@@ -87,6 +91,9 @@ EXTERNAL SOURCES:
   DOUFoundation:
     :commit: a40451618d35fe59087eafbb04a5f1a62a8df29f
     :git: https://github.intra.douban.com/iOS/DOUFoundation.git
+  FormatterKit:
+    :commit: 6b5d870377bfac1fd518983f2fe94a9af69a14b9
+    :git: https://github.com/mattt/FormatterKit.git
   Polymorph:
     :commit: ec503cfe3fcf9e18f8c675175273d5cde608d1e2
     :git: https://github.com/douban/Polymorph.git
@@ -98,6 +105,9 @@ CHECKOUT OPTIONS:
   DOUFoundation:
     :commit: a40451618d35fe59087eafbb04a5f1a62a8df29f
     :git: https://github.intra.douban.com/iOS/DOUFoundation.git
+  FormatterKit:
+    :commit: 6b5d870377bfac1fd518983f2fe94a9af69a14b9
+    :git: https://github.com/mattt/FormatterKit.git
   Polymorph:
     :commit: ec503cfe3fcf9e18f8c675175273d5cde608d1e2
     :git: https://github.com/douban/Polymorph.git
@@ -107,12 +117,13 @@ SPEC CHECKSUMS:
   DoubanObjCClient: 59fd9659f168c335f54358c8d9cc26d10314cc97
   DOUFoundation: a00405534d6acecf50ea2a7a838e0e2cce0bd4b3
   DOUUserManager: 431f25d6ae51890503dcfe361419ce8a2564df6a
+  FormatterKit: 869d6cf60a7e6e599b413be68b0a39ef716a7b1b
   FRDCryptology: b26c95144171438ad5e5ef18ca2512ec48a79b62
   libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
   Polymorph: 57da1d8ec0253281721b805869c638241fe9166d
   Reachability-DoubanInternal: 1f6f2603a866d13dabe51ce27309ab9103901b0d
   SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
 
-PODFILE CHECKSUM: 82cd643a923185995aa0ae4e9ed5a55f0d217c51
+PODFILE CHECKSUM: 41f94f883eeaa6bc27b1698fa7aba4f640fb0991
 
 COCOAPODS: 1.3.1
