@@ -21,6 +21,7 @@
 		71A831AB1FE017DF00FA743D /* DOUAccountManager+Aida.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831AA1FE017DF00FA743D /* DOUAccountManager+Aida.m */; };
 		71A831B11FE0188F00FA743D /* UserAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831B01FE0188F00FA743D /* UserAccount.m */; };
 		71A831B41FE01AEE00FA743D /* AIUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831B31FE01AEE00FA743D /* AIUser.m */; };
+		71A831BC1FE162DF00FA743D /* DOUAPIClient+Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831BB1FE162DF00FA743D /* DOUAPIClient+Account.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		71A831B01FE0188F00FA743D /* UserAccount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserAccount.m; sourceTree = "<group>"; };
 		71A831B21FE01AEE00FA743D /* AIUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIUser.h; sourceTree = "<group>"; };
 		71A831B31FE01AEE00FA743D /* AIUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIUser.m; sourceTree = "<group>"; };
+		71A831BA1FE162DF00FA743D /* DOUAPIClient+Account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DOUAPIClient+Account.h"; sourceTree = "<group>"; };
+		71A831BB1FE162DF00FA743D /* DOUAPIClient+Account.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DOUAPIClient+Account.m"; sourceTree = "<group>"; };
 		AEA78D0C7BBF014A5071895B /* Pods_aida.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aida.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -165,6 +168,7 @@
 		71A831A01FE00F8700FA743D /* API */ = {
 			isa = PBXGroup;
 			children = (
+				71A831B61FE1625200FA743D /* User */,
 				71A831A61FE0130800FA743D /* DOUAPIClientExtension.swift */,
 			);
 			path = API;
@@ -187,6 +191,15 @@
 				71A831A41FE0115600FA743D /* BaseConfiguration.swift */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		71A831B61FE1625200FA743D /* User */ = {
+			isa = PBXGroup;
+			children = (
+				71A831BA1FE162DF00FA743D /* DOUAPIClient+Account.h */,
+				71A831BB1FE162DF00FA743D /* DOUAPIClient+Account.m */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,6 +383,7 @@
 				71A831951FE003D100FA743D /* AIBaseViewController.swift in Sources */,
 				71A831931FE003B900FA743D /* AIBaseTabBarController.swift in Sources */,
 				71A831A71FE0130800FA743D /* DOUAPIClientExtension.swift in Sources */,
+				71A831BC1FE162DF00FA743D /* DOUAPIClient+Account.m in Sources */,
 				71A831AB1FE017DF00FA743D /* DOUAccountManager+Aida.m in Sources */,
 				71A831A51FE0115600FA743D /* BaseConfiguration.swift in Sources */,
 				71A831B11FE0188F00FA743D /* UserAccount.m in Sources */,
