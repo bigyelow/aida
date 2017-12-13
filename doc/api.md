@@ -216,8 +216,8 @@ point: Int, (一个题目对应的分数)
 ```
 {
 id: String,
-start_time: String, （格式待定）
-end_time: String,（格式待定）
+start_time: String, (`yyyy-MM-dd HH:mm:ss`)
+end_time: String, (`yyyy-MM-dd HH:mm:ss`)
 questions: [Question],
 }
 ```
