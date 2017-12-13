@@ -41,7 +41,7 @@
 
 ```
 1. 获取验证码
-get get_verification_code
+get verification_code
 
 parameter:
 {
