@@ -27,6 +27,7 @@
 		71A831E01FE2B61300FA743D /* AIQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831DC1FE2B61300FA743D /* AIQuestion.m */; };
 		71A831E11FE2B61300FA743D /* AIAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831DD1FE2B61300FA743D /* AIAnswer.m */; };
 		71A831E21FE2B61300FA743D /* AIQuestionSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831DE1FE2B61300FA743D /* AIQuestionSet.m */; };
+		71A831E71FE2B79700FA743D /* DOUAPIClient+Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831E61FE2B79700FA743D /* DOUAPIClient+Question.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,8 @@
 		71A831DD1FE2B61300FA743D /* AIAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIAnswer.m; sourceTree = "<group>"; };
 		71A831DE1FE2B61300FA743D /* AIQuestionSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIQuestionSet.m; sourceTree = "<group>"; };
 		71A831E31FE2B6CD00FA743D /* aida-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "aida-Bridging-Header.h"; sourceTree = "<group>"; };
+		71A831E51FE2B79700FA743D /* DOUAPIClient+Question.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DOUAPIClient+Question.h"; sourceTree = "<group>"; };
+		71A831E61FE2B79700FA743D /* DOUAPIClient+Question.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DOUAPIClient+Question.m"; sourceTree = "<group>"; };
 		AEA78D0C7BBF014A5071895B /* Pods_aida.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aida.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -207,6 +210,7 @@
 		71A831CE1FE2B60600FA743D /* API */ = {
 			isa = PBXGroup;
 			children = (
+				71A831E41FE2B78600FA743D /* Question */,
 				71A831CF1FE2B60600FA743D /* DOUAPIClientExtension.swift */,
 				71A831D01FE2B60600FA743D /* User */,
 			);
@@ -226,15 +230,24 @@
 			isa = PBXGroup;
 			children = (
 				71A831D61FE2B61300FA743D /* AIUser.h */,
-				71A831D71FE2B61300FA743D /* AIAnswer.h */,
-				71A831D81FE2B61300FA743D /* AIQuestion.h */,
-				71A831DA1FE2B61300FA743D /* AIQuestionSet.h */,
 				71A831DB1FE2B61300FA743D /* AIUser.m */,
-				71A831DC1FE2B61300FA743D /* AIQuestion.m */,
+				71A831D71FE2B61300FA743D /* AIAnswer.h */,
 				71A831DD1FE2B61300FA743D /* AIAnswer.m */,
+				71A831D81FE2B61300FA743D /* AIQuestion.h */,
+				71A831DC1FE2B61300FA743D /* AIQuestion.m */,
+				71A831DA1FE2B61300FA743D /* AIQuestionSet.h */,
 				71A831DE1FE2B61300FA743D /* AIQuestionSet.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		71A831E41FE2B78600FA743D /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				71A831E51FE2B79700FA743D /* DOUAPIClient+Question.h */,
+				71A831E61FE2B79700FA743D /* DOUAPIClient+Question.m */,
+			);
+			path = Question;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,6 +435,7 @@
 				71A831931FE003B900FA743D /* AIBaseTabBarController.swift in Sources */,
 				71A831DF1FE2B61300FA743D /* AIUser.m in Sources */,
 				71A831AB1FE017DF00FA743D /* DOUAccountManager+Aida.m in Sources */,
+				71A831E71FE2B79700FA743D /* DOUAPIClient+Question.m in Sources */,
 				71A831A51FE0115600FA743D /* BaseConfiguration.swift in Sources */,
 				71A831E21FE2B61300FA743D /* AIQuestionSet.m in Sources */,
 				71A831CD1FE174CD00FA743D /* AITransformers.m in Sources */,
