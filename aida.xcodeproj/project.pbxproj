@@ -31,6 +31,7 @@
 		71A831EB1FE2BCF200FA743D /* DOUObjectArray+Builder.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831EA1FE2BCF200FA743D /* DOUObjectArray+Builder.m */; };
 		71A831EE1FE2BD4C00FA743D /* DOUAPIClient+Rank.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831ED1FE2BD4C00FA743D /* DOUAPIClient+Rank.m */; };
 		71A831F11FE2BFC600FA743D /* AIQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A831F01FE2BFC600FA743D /* AIQuestionViewController.swift */; };
+		71A831F31FE2C34100FA743D /* AIQuestionInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A831F21FE2C34100FA743D /* AIQuestionInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		71A831EC1FE2BD4C00FA743D /* DOUAPIClient+Rank.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DOUAPIClient+Rank.h"; sourceTree = "<group>"; };
 		71A831ED1FE2BD4C00FA743D /* DOUAPIClient+Rank.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DOUAPIClient+Rank.m"; sourceTree = "<group>"; };
 		71A831F01FE2BFC600FA743D /* AIQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIQuestionViewController.swift; sourceTree = "<group>"; };
+		71A831F21FE2C34100FA743D /* AIQuestionInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIQuestionInfoView.swift; sourceTree = "<group>"; };
 		AEA78D0C7BBF014A5071895B /* Pods_aida.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aida.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -275,6 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				71A831F01FE2BFC600FA743D /* AIQuestionViewController.swift */,
+				71A831F21FE2C34100FA743D /* AIQuestionInfoView.swift */,
 			);
 			path = Question;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				71A831E01FE2B61300FA743D /* AIQuestion.m in Sources */,
 				71A831B11FE0188F00FA743D /* UserAccount.m in Sources */,
 				71A831C91FE1737000FA743D /* DOUDateUtils.m in Sources */,
+				71A831F31FE2C34100FA743D /* AIQuestionInfoView.swift in Sources */,
 				71A831E11FE2B61300FA743D /* AIAnswer.m in Sources */,
 				71A831721FE001C800FA743D /* AppDelegate.swift in Sources */,
 				71A831D41FE2B60600FA743D /* DOUAPIClient+Account.m in Sources */,

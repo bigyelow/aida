@@ -9,5 +9,7 @@
 #ifndef aida_Bridging_Header_h
 #define aida_Bridging_Header_h
 
+#import "AIQuestionSet.h"
+#import "AIQuestion.h"
 
 #endif /* aida_Bridging_Header_h */
