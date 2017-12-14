@@ -17,16 +17,16 @@
 		71A831951FE003D100FA743D /* AIBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A831941FE003D100FA743D /* AIBaseViewController.swift */; };
 		71A831971FE0094300FA743D /* AIBaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A831961FE0094300FA743D /* AIBaseNavigationViewController.swift */; };
 		71A831A51FE0115600FA743D /* BaseConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A831A41FE0115600FA743D /* BaseConfiguration.swift */; };
-		71A831A71FE0130800FA743D /* DOUAPIClientExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A831A61FE0130800FA743D /* DOUAPIClientExtension.swift */; };
 		71A831AB1FE017DF00FA743D /* DOUAccountManager+Aida.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831AA1FE017DF00FA743D /* DOUAccountManager+Aida.m */; };
 		71A831B11FE0188F00FA743D /* UserAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831B01FE0188F00FA743D /* UserAccount.m */; };
-		71A831B41FE01AEE00FA743D /* AIUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831B31FE01AEE00FA743D /* AIUser.m */; };
-		71A831BC1FE162DF00FA743D /* DOUAPIClient+Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831BB1FE162DF00FA743D /* DOUAPIClient+Account.m */; };
-		71A831BF1FE16C7200FA743D /* AIAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831BE1FE16C7200FA743D /* AIAnswer.m */; };
-		71A831C21FE16E6F00FA743D /* AIQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831C11FE16E6F00FA743D /* AIQuestion.m */; };
-		71A831C51FE171E800FA743D /* AIQuestionSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831C41FE171E800FA743D /* AIQuestionSet.m */; };
 		71A831C91FE1737000FA743D /* DOUDateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831C81FE1737000FA743D /* DOUDateUtils.m */; };
 		71A831CD1FE174CD00FA743D /* AITransformers.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831CC1FE174CD00FA743D /* AITransformers.m */; };
+		71A831D31FE2B60600FA743D /* DOUAPIClientExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A831CF1FE2B60600FA743D /* DOUAPIClientExtension.swift */; };
+		71A831D41FE2B60600FA743D /* DOUAPIClient+Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831D21FE2B60600FA743D /* DOUAPIClient+Account.m */; };
+		71A831DF1FE2B61300FA743D /* AIUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831DB1FE2B61300FA743D /* AIUser.m */; };
+		71A831E01FE2B61300FA743D /* AIQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831DC1FE2B61300FA743D /* AIQuestion.m */; };
+		71A831E11FE2B61300FA743D /* AIAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831DD1FE2B61300FA743D /* AIAnswer.m */; };
+		71A831E21FE2B61300FA743D /* AIQuestionSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831DE1FE2B61300FA743D /* AIQuestionSet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,28 +54,28 @@
 		71A831921FE003B900FA743D /* AIBaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIBaseTabBarController.swift; sourceTree = "<group>"; };
 		71A831941FE003D100FA743D /* AIBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIBaseViewController.swift; sourceTree = "<group>"; };
 		71A831961FE0094300FA743D /* AIBaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIBaseNavigationViewController.swift; sourceTree = "<group>"; };
-		71A831991FE00D8C00FA743D /* aida-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "aida-Bridging-Header.h"; sourceTree = "<group>"; };
 		71A831A41FE0115600FA743D /* BaseConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseConfiguration.swift; sourceTree = "<group>"; };
-		71A831A61FE0130800FA743D /* DOUAPIClientExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DOUAPIClientExtension.swift; sourceTree = "<group>"; };
 		71A831A91FE017DF00FA743D /* DOUAccountManager+Aida.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DOUAccountManager+Aida.h"; sourceTree = "<group>"; };
 		71A831AA1FE017DF00FA743D /* DOUAccountManager+Aida.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DOUAccountManager+Aida.m"; sourceTree = "<group>"; };
 		71A831AF1FE0188F00FA743D /* UserAccount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserAccount.h; sourceTree = "<group>"; };
 		71A831B01FE0188F00FA743D /* UserAccount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserAccount.m; sourceTree = "<group>"; };
-		71A831B21FE01AEE00FA743D /* AIUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIUser.h; sourceTree = "<group>"; };
-		71A831B31FE01AEE00FA743D /* AIUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIUser.m; sourceTree = "<group>"; };
-		71A831BA1FE162DF00FA743D /* DOUAPIClient+Account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DOUAPIClient+Account.h"; sourceTree = "<group>"; };
-		71A831BB1FE162DF00FA743D /* DOUAPIClient+Account.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DOUAPIClient+Account.m"; sourceTree = "<group>"; };
-		71A831BD1FE16C7200FA743D /* AIAnswer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIAnswer.h; sourceTree = "<group>"; };
-		71A831BE1FE16C7200FA743D /* AIAnswer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIAnswer.m; sourceTree = "<group>"; };
-		71A831C01FE16E6F00FA743D /* AIQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIQuestion.h; sourceTree = "<group>"; };
-		71A831C11FE16E6F00FA743D /* AIQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIQuestion.m; sourceTree = "<group>"; };
-		71A831C31FE171E800FA743D /* AIQuestionSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIQuestionSet.h; sourceTree = "<group>"; };
-		71A831C41FE171E800FA743D /* AIQuestionSet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIQuestionSet.m; sourceTree = "<group>"; };
 		71A831C71FE1737000FA743D /* DOUDateUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOUDateUtils.h; sourceTree = "<group>"; };
 		71A831C81FE1737000FA743D /* DOUDateUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOUDateUtils.m; sourceTree = "<group>"; };
 		71A831CA1FE1742F00FA743D /* AIUtilsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIUtilsMacros.h; sourceTree = "<group>"; };
 		71A831CB1FE174B500FA743D /* AITransformers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AITransformers.h; sourceTree = "<group>"; };
 		71A831CC1FE174CD00FA743D /* AITransformers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AITransformers.m; sourceTree = "<group>"; };
+		71A831CF1FE2B60600FA743D /* DOUAPIClientExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DOUAPIClientExtension.swift; sourceTree = "<group>"; };
+		71A831D11FE2B60600FA743D /* DOUAPIClient+Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DOUAPIClient+Account.h"; sourceTree = "<group>"; };
+		71A831D21FE2B60600FA743D /* DOUAPIClient+Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DOUAPIClient+Account.m"; sourceTree = "<group>"; };
+		71A831D61FE2B61300FA743D /* AIUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIUser.h; sourceTree = "<group>"; };
+		71A831D71FE2B61300FA743D /* AIAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIAnswer.h; sourceTree = "<group>"; };
+		71A831D81FE2B61300FA743D /* AIQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIQuestion.h; sourceTree = "<group>"; };
+		71A831DA1FE2B61300FA743D /* AIQuestionSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIQuestionSet.h; sourceTree = "<group>"; };
+		71A831DB1FE2B61300FA743D /* AIUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIUser.m; sourceTree = "<group>"; };
+		71A831DC1FE2B61300FA743D /* AIQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIQuestion.m; sourceTree = "<group>"; };
+		71A831DD1FE2B61300FA743D /* AIAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIAnswer.m; sourceTree = "<group>"; };
+		71A831DE1FE2B61300FA743D /* AIQuestionSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIQuestionSet.m; sourceTree = "<group>"; };
+		71A831E31FE2B6CD00FA743D /* aida-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "aida-Bridging-Header.h"; sourceTree = "<group>"; };
 		AEA78D0C7BBF014A5071895B /* Pods_aida.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aida.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -138,14 +138,15 @@
 		71A831701FE001C800FA743D /* aida */ = {
 			isa = PBXGroup;
 			children = (
+				71A831D51FE2B61300FA743D /* Model */,
+				71A831CE1FE2B60600FA743D /* API */,
 				71A831911FE0037600FA743D /* Base */,
-				71A831A01FE00F8700FA743D /* API */,
-				71A831981FE00D6500FA743D /* Model */,
 				71A831711FE001C800FA743D /* AppDelegate.swift */,
 				71A831751FE001C800FA743D /* Main.storyboard */,
 				71A831781FE001C800FA743D /* Assets.xcassets */,
 				71A8317A1FE001C800FA743D /* LaunchScreen.storyboard */,
 				71A8317D1FE001C800FA743D /* Info.plist */,
+				71A831E31FE2B6CD00FA743D /* aida-Bridging-Header.h */,
 			);
 			path = aida;
 			sourceTree = "<group>";
@@ -172,31 +173,6 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		71A831981FE00D6500FA743D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				71A831B21FE01AEE00FA743D /* AIUser.h */,
-				71A831B31FE01AEE00FA743D /* AIUser.m */,
-				71A831991FE00D8C00FA743D /* aida-Bridging-Header.h */,
-				71A831BD1FE16C7200FA743D /* AIAnswer.h */,
-				71A831BE1FE16C7200FA743D /* AIAnswer.m */,
-				71A831C01FE16E6F00FA743D /* AIQuestion.h */,
-				71A831C11FE16E6F00FA743D /* AIQuestion.m */,
-				71A831C31FE171E800FA743D /* AIQuestionSet.h */,
-				71A831C41FE171E800FA743D /* AIQuestionSet.m */,
-			);
-			path = Model;
-			sourceTree = SOURCE_ROOT;
-		};
-		71A831A01FE00F8700FA743D /* API */ = {
-			isa = PBXGroup;
-			children = (
-				71A831B61FE1625200FA743D /* User */,
-				71A831A61FE0130800FA743D /* DOUAPIClientExtension.swift */,
-			);
-			path = API;
-			sourceTree = SOURCE_ROOT;
-		};
 		71A831A81FE017BA00FA743D /* User */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,15 +192,6 @@
 			path = Configuration;
 			sourceTree = "<group>";
 		};
-		71A831B61FE1625200FA743D /* User */ = {
-			isa = PBXGroup;
-			children = (
-				71A831BA1FE162DF00FA743D /* DOUAPIClient+Account.h */,
-				71A831BB1FE162DF00FA743D /* DOUAPIClient+Account.m */,
-			);
-			path = User;
-			sourceTree = "<group>";
-		};
 		71A831C61FE1733100FA743D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +202,39 @@
 				71A831CC1FE174CD00FA743D /* AITransformers.m */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		71A831CE1FE2B60600FA743D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				71A831CF1FE2B60600FA743D /* DOUAPIClientExtension.swift */,
+				71A831D01FE2B60600FA743D /* User */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		71A831D01FE2B60600FA743D /* User */ = {
+			isa = PBXGroup;
+			children = (
+				71A831D11FE2B60600FA743D /* DOUAPIClient+Account.h */,
+				71A831D21FE2B60600FA743D /* DOUAPIClient+Account.m */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		71A831D51FE2B61300FA743D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				71A831D61FE2B61300FA743D /* AIUser.h */,
+				71A831D71FE2B61300FA743D /* AIAnswer.h */,
+				71A831D81FE2B61300FA743D /* AIQuestion.h */,
+				71A831DA1FE2B61300FA743D /* AIQuestionSet.h */,
+				71A831DB1FE2B61300FA743D /* AIUser.m */,
+				71A831DC1FE2B61300FA743D /* AIQuestion.m */,
+				71A831DD1FE2B61300FA743D /* AIAnswer.m */,
+				71A831DE1FE2B61300FA743D /* AIQuestionSet.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,21 +416,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71A831D31FE2B60600FA743D /* DOUAPIClientExtension.swift in Sources */,
 				71A831971FE0094300FA743D /* AIBaseNavigationViewController.swift in Sources */,
-				71A831C21FE16E6F00FA743D /* AIQuestion.m in Sources */,
 				71A831951FE003D100FA743D /* AIBaseViewController.swift in Sources */,
 				71A831931FE003B900FA743D /* AIBaseTabBarController.swift in Sources */,
-				71A831A71FE0130800FA743D /* DOUAPIClientExtension.swift in Sources */,
-				71A831BC1FE162DF00FA743D /* DOUAPIClient+Account.m in Sources */,
+				71A831DF1FE2B61300FA743D /* AIUser.m in Sources */,
 				71A831AB1FE017DF00FA743D /* DOUAccountManager+Aida.m in Sources */,
 				71A831A51FE0115600FA743D /* BaseConfiguration.swift in Sources */,
-				71A831BF1FE16C7200FA743D /* AIAnswer.m in Sources */,
-				71A831C51FE171E800FA743D /* AIQuestionSet.m in Sources */,
+				71A831E21FE2B61300FA743D /* AIQuestionSet.m in Sources */,
 				71A831CD1FE174CD00FA743D /* AITransformers.m in Sources */,
+				71A831E01FE2B61300FA743D /* AIQuestion.m in Sources */,
 				71A831B11FE0188F00FA743D /* UserAccount.m in Sources */,
-				71A831B41FE01AEE00FA743D /* AIUser.m in Sources */,
 				71A831C91FE1737000FA743D /* DOUDateUtils.m in Sources */,
+				71A831E11FE2B61300FA743D /* AIAnswer.m in Sources */,
 				71A831721FE001C800FA743D /* AppDelegate.swift in Sources */,
+				71A831D41FE2B60600FA743D /* DOUAPIClient+Account.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,7 +591,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aida.com.aida;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Model/aida-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "aida/aida-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -610,7 +610,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aida.com.aida;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Model/aida-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "aida/aida-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
