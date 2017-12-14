@@ -28,6 +28,8 @@
 		71A831E11FE2B61300FA743D /* AIAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831DD1FE2B61300FA743D /* AIAnswer.m */; };
 		71A831E21FE2B61300FA743D /* AIQuestionSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831DE1FE2B61300FA743D /* AIQuestionSet.m */; };
 		71A831E71FE2B79700FA743D /* DOUAPIClient+Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831E61FE2B79700FA743D /* DOUAPIClient+Question.m */; };
+		71A831EB1FE2BCF200FA743D /* DOUObjectArray+Builder.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831EA1FE2BCF200FA743D /* DOUObjectArray+Builder.m */; };
+		71A831EE1FE2BD4C00FA743D /* DOUAPIClient+Rank.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831ED1FE2BD4C00FA743D /* DOUAPIClient+Rank.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,10 @@
 		71A831E31FE2B6CD00FA743D /* aida-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "aida-Bridging-Header.h"; sourceTree = "<group>"; };
 		71A831E51FE2B79700FA743D /* DOUAPIClient+Question.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DOUAPIClient+Question.h"; sourceTree = "<group>"; };
 		71A831E61FE2B79700FA743D /* DOUAPIClient+Question.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DOUAPIClient+Question.m"; sourceTree = "<group>"; };
+		71A831E91FE2BCF200FA743D /* DOUObjectArray+Builder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DOUObjectArray+Builder.h"; sourceTree = "<group>"; };
+		71A831EA1FE2BCF200FA743D /* DOUObjectArray+Builder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DOUObjectArray+Builder.m"; sourceTree = "<group>"; };
+		71A831EC1FE2BD4C00FA743D /* DOUAPIClient+Rank.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DOUAPIClient+Rank.h"; sourceTree = "<group>"; };
+		71A831ED1FE2BD4C00FA743D /* DOUAPIClient+Rank.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DOUAPIClient+Rank.m"; sourceTree = "<group>"; };
 		AEA78D0C7BBF014A5071895B /* Pods_aida.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aida.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -203,6 +209,8 @@
 				71A831CA1FE1742F00FA743D /* AIUtilsMacros.h */,
 				71A831CB1FE174B500FA743D /* AITransformers.h */,
 				71A831CC1FE174CD00FA743D /* AITransformers.m */,
+				71A831E91FE2BCF200FA743D /* DOUObjectArray+Builder.h */,
+				71A831EA1FE2BCF200FA743D /* DOUObjectArray+Builder.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -210,6 +218,7 @@
 		71A831CE1FE2B60600FA743D /* API */ = {
 			isa = PBXGroup;
 			children = (
+				71A831E81FE2BAE800FA743D /* Ranklist */,
 				71A831E41FE2B78600FA743D /* Question */,
 				71A831CF1FE2B60600FA743D /* DOUAPIClientExtension.swift */,
 				71A831D01FE2B60600FA743D /* User */,
@@ -248,6 +257,15 @@
 				71A831E61FE2B79700FA743D /* DOUAPIClient+Question.m */,
 			);
 			path = Question;
+			sourceTree = "<group>";
+		};
+		71A831E81FE2BAE800FA743D /* Ranklist */ = {
+			isa = PBXGroup;
+			children = (
+				71A831EC1FE2BD4C00FA743D /* DOUAPIClient+Rank.h */,
+				71A831ED1FE2BD4C00FA743D /* DOUAPIClient+Rank.m */,
+			);
+			path = Ranklist;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -437,8 +455,10 @@
 				71A831AB1FE017DF00FA743D /* DOUAccountManager+Aida.m in Sources */,
 				71A831E71FE2B79700FA743D /* DOUAPIClient+Question.m in Sources */,
 				71A831A51FE0115600FA743D /* BaseConfiguration.swift in Sources */,
+				71A831EE1FE2BD4C00FA743D /* DOUAPIClient+Rank.m in Sources */,
 				71A831E21FE2B61300FA743D /* AIQuestionSet.m in Sources */,
 				71A831CD1FE174CD00FA743D /* AITransformers.m in Sources */,
+				71A831EB1FE2BCF200FA743D /* DOUObjectArray+Builder.m in Sources */,
 				71A831E01FE2B61300FA743D /* AIQuestion.m in Sources */,
 				71A831B11FE0188F00FA743D /* UserAccount.m in Sources */,
 				71A831C91FE1737000FA743D /* DOUDateUtils.m in Sources */,
