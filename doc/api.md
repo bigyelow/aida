@@ -109,7 +109,7 @@ post complete_question_set
 parameters:
 {
 question_set_id: String,
-right_question: [Question], (答对的题目)
+right_questions: id1|id2|..., (答对的题目，使用 | 分隔)
 got_point: Int, (获取的分数)
 }
 
