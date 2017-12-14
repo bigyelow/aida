@@ -133,7 +133,7 @@ response:
 total: Int
 count: Int
 start: Int
-array: [User]
+user: [User]
 }
 ```
 
