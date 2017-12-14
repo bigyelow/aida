@@ -30,6 +30,7 @@
 		71A831E71FE2B79700FA743D /* DOUAPIClient+Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831E61FE2B79700FA743D /* DOUAPIClient+Question.m */; };
 		71A831EB1FE2BCF200FA743D /* DOUObjectArray+Builder.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831EA1FE2BCF200FA743D /* DOUObjectArray+Builder.m */; };
 		71A831EE1FE2BD4C00FA743D /* DOUAPIClient+Rank.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A831ED1FE2BD4C00FA743D /* DOUAPIClient+Rank.m */; };
+		71A831F11FE2BFC600FA743D /* AIQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A831F01FE2BFC600FA743D /* AIQuestionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		71A831EA1FE2BCF200FA743D /* DOUObjectArray+Builder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DOUObjectArray+Builder.m"; sourceTree = "<group>"; };
 		71A831EC1FE2BD4C00FA743D /* DOUAPIClient+Rank.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DOUAPIClient+Rank.h"; sourceTree = "<group>"; };
 		71A831ED1FE2BD4C00FA743D /* DOUAPIClient+Rank.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DOUAPIClient+Rank.m"; sourceTree = "<group>"; };
+		71A831F01FE2BFC600FA743D /* AIQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIQuestionViewController.swift; sourceTree = "<group>"; };
 		AEA78D0C7BBF014A5071895B /* Pods_aida.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aida.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -147,6 +149,7 @@
 		71A831701FE001C800FA743D /* aida */ = {
 			isa = PBXGroup;
 			children = (
+				71A831EF1FE2BF7900FA743D /* Question */,
 				71A831711FE001C800FA743D /* AppDelegate.swift */,
 				71A831751FE001C800FA743D /* Main.storyboard */,
 				71A831781FE001C800FA743D /* Assets.xcassets */,
@@ -266,6 +269,14 @@
 				71A831ED1FE2BD4C00FA743D /* DOUAPIClient+Rank.m */,
 			);
 			path = Ranklist;
+			sourceTree = "<group>";
+		};
+		71A831EF1FE2BF7900FA743D /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				71A831F01FE2BFC600FA743D /* AIQuestionViewController.swift */,
+			);
+			path = Question;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,6 +460,7 @@
 			files = (
 				71A831D31FE2B60600FA743D /* DOUAPIClientExtension.swift in Sources */,
 				71A831971FE0094300FA743D /* AIBaseNavigationViewController.swift in Sources */,
+				71A831F11FE2BFC600FA743D /* AIQuestionViewController.swift in Sources */,
 				71A831951FE003D100FA743D /* AIBaseViewController.swift in Sources */,
 				71A831931FE003B900FA743D /* AIBaseTabBarController.swift in Sources */,
 				71A831DF1FE2B61300FA743D /* AIUser.m in Sources */,

@@ -36,7 +36,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }()
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    tabbarController.viewControllers = [questionController, rankListController, mineController]
+    let questionNav = AIBaseNavigationViewController(rootViewController: questionController)
+    let rankListNav = AIBaseNavigationViewController(rootViewController: rankListController)
+    let mineNav = AIBaseNavigationViewController(rootViewController: mineController)
+
+    tabbarController.viewControllers = [questionNav, rankListNav, mineNav]
     window?.rootViewController = tabbarController
     window?.makeKeyAndVisible()
 
