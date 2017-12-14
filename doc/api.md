@@ -59,10 +59,7 @@ phone: String,
 verification_code: String,
 }
 
-response:
-{
-oauth: OAuth
-}
+response: OAuth
 
 ```
 
@@ -81,21 +78,14 @@ phone: String,
 password: String,
 }
 
-response:
-{
-oauth: OAuth
-}
-
+response: OAuth
 
 2.根据 `OAuth` 获取用户信息
 get user/:id
 
 parameters: nil
 
-response:
-{
-user: User
-}
+response: User
 ```
 
 ### 2. 答题模块
@@ -108,10 +98,7 @@ get question_set
 
 parameters: nil
 
-response:
-{
-question_set: QuestionSet
-}
+response: QuestionSet
 ```
 
 #### 完成题目
