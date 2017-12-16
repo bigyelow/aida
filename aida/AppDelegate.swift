@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }()
   let tabbarController: AIBaseTabBarController = AIBaseTabBarController()
   let questionController: AIBaseViewController = {
-    let controller = AIBaseViewController()
+    let controller = AIQuestionViewController()
     controller.title = "答题"
     controller.view.backgroundColor = UIColor.white
     return controller
@@ -36,6 +36,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }()
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    // MARK: test
+//    let test = AITest()
+//    test.start()
+
     let questionNav = AIBaseNavigationViewController(rootViewController: questionController)
     let rankListNav = AIBaseNavigationViewController(rootViewController: rankListController)
     let mineNav = AIBaseNavigationViewController(rootViewController: mineController)

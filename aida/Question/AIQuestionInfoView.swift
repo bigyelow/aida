@@ -22,6 +22,10 @@ class AIQuestionInfoView: UIView {
     super.init(frame: frame)
 
     infoLabel.text = "答题获积分，积分可换现金"
+    addSubview(answerButton)
+    addSubview(durationLabel)
+    addSubview(questionCountLabel)
+    addSubview(infoLabel)
   }
 
   required init?(coder aDecoder: NSCoder) {
@@ -72,7 +76,7 @@ class AIQuestionInfoView: UIView {
     // MARK: 下一场
     answerButton.setTitle("开始答题", for: .normal)
     questionCountLabel.text = "\(questionCount)道题"
-    durationLabel.text = "12:00~13:00"
+    durationLabel.text = questionSet.endTimeStr
   }
 
 }
