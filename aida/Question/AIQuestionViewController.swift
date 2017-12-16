@@ -53,6 +53,14 @@ class AIQuestionViewController: AIBaseViewController {
   // MAKR: debug
   // Data
   private let questionSet = debugQuestionSet
+  private var checkingArray = [Bool]()
+  private var heightCell = AIQuestionOptionTableViewCell(frame: CGRect.zero)
+  private var currentQuestion: AIQuestion? {
+    get {
+      guard let questions = questionSet.questions, questions.count > currentIndex else { return nil }
+      return questions[currentIndex]
+    }
+  }
   private var currentIndex: Int = 0 {
     didSet {
       guard let currentQuestion = currentQuestion else { return }
@@ -62,18 +70,10 @@ class AIQuestionViewController: AIBaseViewController {
         checkingArray.append(false)
       }
 
-      updateQuestionHeaderView(withIndex: currentIndex)
+      updateQuestionHeaderView(index: currentIndex)
       questionView.reloadData()
     }
   }
-  private var currentQuestion: AIQuestion? {
-    get {
-      guard let questions = questionSet.questions, questions.count > currentIndex else { return nil }
-      return questions[currentIndex]
-    }
-  }
-  private var checkingArray = [Bool]()
-  private var heightCell = AIQuestionOptionTableViewCell(frame: CGRect.zero)
 
   override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
     super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -117,18 +117,20 @@ class AIQuestionViewController: AIBaseViewController {
   override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
 
-    let questionInfoHeight = questionInfoView.sizeThatFits(view.bounds.size).height
-    let questionInfoWidth = view.bounds.width - 2 * questionInfoHorizontalMargin
-    questionInfoView.frame.size = CGSize(width: questionInfoWidth, height: questionInfoHeight)
-    questionInfoView.center = view.center
+    if questionView.isHidden == false {
+      let questionInfoHeight = questionInfoView.sizeThatFits(view.bounds.size).height
+      let questionInfoWidth = view.bounds.width - 2 * questionInfoHorizontalMargin
+      questionInfoView.frame.size = CGSize(width: questionInfoWidth, height: questionInfoHeight)
+      questionInfoView.center = view.center
 
-    questionView.frame = view.bounds
+      questionView.frame = view.bounds
+    }
   }
 }
 
-// MARK: question header
+// MARK: upate
 fileprivate extension AIQuestionViewController {
-  func updateQuestionHeaderView(withIndex index: Int) {
+  func updateQuestionHeaderView(index: Int) {
     guard let questions = questionSet.questions else { return }
     guard questions.count > index else { return }
 

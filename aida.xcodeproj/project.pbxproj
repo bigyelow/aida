@@ -296,12 +296,12 @@
 		71A831EF1FE2BF7900FA743D /* Question */ = {
 			isa = PBXGroup;
 			children = (
-				71C5469E1FE53F5A00F4C3EF /* cells */,
 				71A831F01FE2BFC600FA743D /* AIQuestionViewController.swift */,
 				71A831F21FE2C34100FA743D /* AIQuestionInfoView.swift */,
 				71C5469C1FE52DF400F4C3EF /* AIQuestionHeaderView.swift */,
 				71DD44EC1FE2D02E0000A0DA /* AITest.h */,
 				71DD44ED1FE2D02E0000A0DA /* AITest.m */,
+				71C5469E1FE53F5A00F4C3EF /* cells */,
 			);
 			path = Question;
 			sourceTree = "<group>";
