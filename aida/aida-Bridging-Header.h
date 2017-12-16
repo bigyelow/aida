@@ -12,6 +12,8 @@
 #import "AIQuestionSet.h"
 #import "AIQuestion.h"
 #import "AIQuestionOption.h"
+#import "DOUDateUtils.h"
+
 #import "AITest.h"
 
 #endif /* aida_Bridging_Header_h */

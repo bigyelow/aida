@@ -76,7 +76,10 @@ class AIQuestionInfoView: UIView {
     // MARK: 下一场
     answerButton.setTitle("开始答题", for: .normal)
     questionCountLabel.text = "\(questionCount)道题"
-    durationLabel.text = questionSet.endTimeStr
+
+    if let startDate = questionSet.startTime, let endDate = questionSet.endTime {
+      durationLabel.text = DOUDateUtils.timeDisplayString(withBeginTime: startDate, endTime: endDate)
+    }
   }
 
 }

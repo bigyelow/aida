@@ -39,9 +39,9 @@ private let question = AIQuestion(dictionary: ["id": "1",
                                                            questionOption3!.dictionary],
                                                "point": 2])
 private let debugQuestionSet = AIQuestionSet(dictionary: ["id": "1",
-                                                     "start_time": "12:00",
-                                                     "end_time": "13:00",
-                                                     "questions": [question!.dictionary]])!
+                                                          "start_time": "2017-12-17 12:00:00",
+                                                          "end_time": "2017-12-17 13:00:00",
+                                                          "questions": [question!.dictionary]])!
 
 fileprivate let questionInfoHorizontalMargin: CGFloat = 15
 class AIQuestionViewController: AIBaseViewController {
