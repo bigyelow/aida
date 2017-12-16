@@ -117,7 +117,7 @@ class AIQuestionViewController: AIBaseViewController {
   override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
 
-    if questionView.isHidden == false {
+    if questionInfoView.isHidden == false {
       let questionInfoHeight = questionInfoView.sizeThatFits(view.bounds.size).height
       let questionInfoWidth = view.bounds.width - 2 * questionInfoHorizontalMargin
       questionInfoView.frame.size = CGSize(width: questionInfoWidth, height: questionInfoHeight)

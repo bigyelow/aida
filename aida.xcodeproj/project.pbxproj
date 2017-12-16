@@ -166,7 +166,6 @@
 		71A831701FE001C800FA743D /* aida */ = {
 			isa = PBXGroup;
 			children = (
-				71A831EF1FE2BF7900FA743D /* Question */,
 				71A831711FE001C800FA743D /* AppDelegate.swift */,
 				71C546A31FE55B4A00F4C3EF /* AITest.h */,
 				71C546A41FE55B4A00F4C3EF /* AITest.m */,
@@ -175,9 +174,10 @@
 				71A8317A1FE001C800FA743D /* LaunchScreen.storyboard */,
 				71A8317D1FE001C800FA743D /* Info.plist */,
 				71A831E31FE2B6CD00FA743D /* aida-Bridging-Header.h */,
-				71A831D51FE2B61300FA743D /* Model */,
-				71A831CE1FE2B60600FA743D /* API */,
+				71A831EF1FE2BF7900FA743D /* Question */,
 				71A831911FE0037600FA743D /* Base */,
+				71A831CE1FE2B60600FA743D /* API */,
+				71A831D51FE2B61300FA743D /* Model */,
 			);
 			path = aida;
 			sourceTree = "<group>";
