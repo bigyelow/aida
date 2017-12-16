@@ -179,9 +179,18 @@ phone: String,
 id: String,
 refer_id: String,（对应的 Question 的 id）
 type: QuestionType
-value: [String]，（答案数组，对于单选只有一个元素）
+value: [String]，（答案数组，对于单选只有一个元素。值为对应 QuestionOption 的 id）
 }
 ```
+#### 题目选项 `QuestionOption`
+```
+{
+id: String,
+refer_id: String,(对应的 Question 的 id）
+text: String,（问题选项的描述）
+}
+```
+
 #### 单个题目 `Question`
 - 暂时只支持文本题目
 
@@ -194,6 +203,7 @@ time_limit: Int（限时，单位为秒）,
 index: Int（是当前合集的第几题）,
 type: QuestionType,
 answer: Answer,
+options: [QuestionOption],
 point: Int, (一个题目对应的分数)
 }
 

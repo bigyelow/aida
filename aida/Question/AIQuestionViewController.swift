@@ -36,7 +36,8 @@ private let question = AIQuestion(dictionary: ["id": "1",
                                                "options": [questionOption0!.dictionary,
                                                            questionOption1!.dictionary,
                                                            questionOption2!.dictionary,
-                                                           questionOption3!.dictionary]])
+                                                           questionOption3!.dictionary],
+                                               "point": 2])
 private let debugQuestionSet = AIQuestionSet(dictionary: ["id": "1",
                                                      "start_time": "12:00",
                                                      "end_time": "13:00",
