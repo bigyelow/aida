@@ -7,6 +7,7 @@
 //
 
 @import DoubanObjCClient;
+@class AIQuestionOption;
 
 #import "AIAnswer.h"
 
@@ -20,6 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) AIQuestionType type;
 @property (nonatomic, readonly) AIAnswer *answer;
 @property (nonatomic, readonly) NSInteger point;
+@property (nonatomic, readonly) NSArray<AIQuestionOption *> *options;
 
 @end
 NS_ASSUME_NONNULL_END
