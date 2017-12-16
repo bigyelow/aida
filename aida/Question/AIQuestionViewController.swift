@@ -45,17 +45,39 @@ private let debugQuestionSet = AIQuestionSet(dictionary: ["id": "1",
 
 fileprivate let questionInfoHorizontalMargin: CGFloat = 15
 class AIQuestionViewController: AIBaseViewController {
+  // UI
   private let questionInfoView = AIQuestionInfoView()
+  private let questionView = UITableView(frame: CGRect.zero, style: .plain)
+  private let questionHeaderView = AIQuestionHeaderView(frame: CGRect.zero)
 
   // MAKR: debug
+  // Data
   private let questionSet = debugQuestionSet
+  private let questionIndex: Int = 0
 
   override func viewDidLoad() {
     super.viewDidLoad()
 
     // MARK: get question set
+
+    // questionInfoView
+    questionInfoView.answerAction = {
+      [weak self] in
+      guard let sself = self else { return }
+
+      sself.questionInfoView.isHidden = true
+      sself.questionView.isHidden = false
+
+      sself.updateQuestionHeaderView(withIndex: 0)
+    }
     view.addSubview(questionInfoView)
     questionInfoView.update(with: questionSet)
+
+    // questionView
+    questionView.isHidden = true
+    questionView.delegate = self
+    questionView.dataSource = self
+    view.addSubview(questionView)
   }
 
   override func viewDidLayoutSubviews() {
@@ -65,6 +87,31 @@ class AIQuestionViewController: AIBaseViewController {
     let questionInfoWidth = view.bounds.width - 2 * questionInfoHorizontalMargin
     questionInfoView.frame.size = CGSize(width: questionInfoWidth, height: questionInfoHeight)
     questionInfoView.center = view.center
+
+    questionView.frame = view.bounds
+  }
+}
+
+// MARK: question header
+fileprivate extension AIQuestionViewController {
+  func updateQuestionHeaderView(withIndex index: Int) {
+    guard let questions = questionSet.questions else { return }
+    guard questions.count > index else { return }
+
+    questionHeaderView.update(with: questions[index], questionsCount: index)
+    questionHeaderView.frame.size = questionHeaderView.sizeThatFits(view.frame.size)
+
+    questionView.tableHeaderView = questionHeaderView
+  }
+}
+
+// MARK: tableview delegate & datasource
+extension AIQuestionViewController: UITableViewDelegate, UITableViewDataSource {
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return 0
   }
 
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    return UITableViewCell()
+  }
 }

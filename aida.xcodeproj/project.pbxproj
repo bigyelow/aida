@@ -33,6 +33,7 @@
 		71A831F11FE2BFC600FA743D /* AIQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A831F01FE2BFC600FA743D /* AIQuestionViewController.swift */; };
 		71A831F31FE2C34100FA743D /* AIQuestionInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A831F21FE2C34100FA743D /* AIQuestionInfoView.swift */; };
 		71C5469B1FE4DA8E00F4C3EF /* AIQuestionOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C5469A1FE4DA8E00F4C3EF /* AIQuestionOption.m */; };
+		71C5469D1FE52DF400F4C3EF /* AIQuestionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C5469C1FE52DF400F4C3EF /* AIQuestionHeaderView.swift */; };
 		71DD44EE1FE2D02E0000A0DA /* AITest.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DD44ED1FE2D02E0000A0DA /* AITest.m */; };
 		71DD44F31FE4D6E20000A0DA /* DOUObject+DynamicProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DD44F21FE4D6E20000A0DA /* DOUObject+DynamicProperty.m */; };
 /* End PBXBuildFile section */
@@ -94,6 +95,7 @@
 		71A831F21FE2C34100FA743D /* AIQuestionInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIQuestionInfoView.swift; sourceTree = "<group>"; };
 		71C546991FE4DA8E00F4C3EF /* AIQuestionOption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIQuestionOption.h; sourceTree = "<group>"; };
 		71C5469A1FE4DA8E00F4C3EF /* AIQuestionOption.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIQuestionOption.m; sourceTree = "<group>"; };
+		71C5469C1FE52DF400F4C3EF /* AIQuestionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIQuestionHeaderView.swift; sourceTree = "<group>"; };
 		71DD44EC1FE2D02E0000A0DA /* AITest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AITest.h; sourceTree = "<group>"; };
 		71DD44ED1FE2D02E0000A0DA /* AITest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AITest.m; sourceTree = "<group>"; };
 		71DD44F11FE4D6E20000A0DA /* DOUObject+DynamicProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DOUObject+DynamicProperty.h"; sourceTree = "<group>"; };
@@ -291,6 +293,7 @@
 			children = (
 				71A831F01FE2BFC600FA743D /* AIQuestionViewController.swift */,
 				71A831F21FE2C34100FA743D /* AIQuestionInfoView.swift */,
+				71C5469C1FE52DF400F4C3EF /* AIQuestionHeaderView.swift */,
 				71DD44EC1FE2D02E0000A0DA /* AITest.h */,
 				71DD44ED1FE2D02E0000A0DA /* AITest.m */,
 			);
@@ -487,6 +490,7 @@
 				71A831AB1FE017DF00FA743D /* DOUAccountManager+Aida.m in Sources */,
 				71A831E71FE2B79700FA743D /* DOUAPIClient+Question.m in Sources */,
 				71A831A51FE0115600FA743D /* BaseConfiguration.swift in Sources */,
+				71C5469D1FE52DF400F4C3EF /* AIQuestionHeaderView.swift in Sources */,
 				71A831EE1FE2BD4C00FA743D /* DOUAPIClient+Rank.m in Sources */,
 				71A831E21FE2B61300FA743D /* AIQuestionSet.m in Sources */,
 				71A831CD1FE174CD00FA743D /* AITransformers.m in Sources */,

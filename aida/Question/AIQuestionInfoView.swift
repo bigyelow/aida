@@ -13,6 +13,8 @@ fileprivate let countTop: CGFloat = 20.0
 fileprivate let infoTop: CGFloat = 20.0
 
 class AIQuestionInfoView: UIView {
+  var answerAction: (() -> Void)?
+
   private let answerButton = UIButton(type: .system)
   private let durationLabel = UILabel()
   private let questionCountLabel = UILabel()
@@ -26,6 +28,8 @@ class AIQuestionInfoView: UIView {
     addSubview(durationLabel)
     addSubview(questionCountLabel)
     addSubview(infoLabel)
+
+    answerButton.addTarget(self, action: #selector(answerButtonPressed), for: .touchUpInside)
   }
 
   required init?(coder aDecoder: NSCoder) {
@@ -56,8 +60,6 @@ class AIQuestionInfoView: UIView {
   }
 
   override func sizeThatFits(_ size: CGSize) -> CGSize {
-    super.sizeThatFits(size)
-
     answerButton.sizeToFit()
     durationLabel.sizeToFit()
     questionCountLabel.sizeToFit()
@@ -80,6 +82,11 @@ class AIQuestionInfoView: UIView {
     if let startDate = questionSet.startTime, let endDate = questionSet.endTime {
       durationLabel.text = DOUDateUtils.timeDisplayString(withBeginTime: startDate, endTime: endDate)
     }
+
+    setNeedsLayout()
   }
 
+  @objc private func answerButtonPressed() {
+    answerAction?()
+  }
 }
