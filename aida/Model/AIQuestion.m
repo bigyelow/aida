@@ -17,6 +17,6 @@
 @plm_dynamic(desc, @"description")
 @plm_dynamic(timeLimit, @"time_limit")
 @plm_dynamic_nonnull(answer, @"answer", [AIAnswer new])
-@plm_dynamic_nonnull(options, @"options", PLMArrayTransformerForClass([AIQuestionOption class]))
+@plm_dynamic_nonnull(options, @"options", PLMArrayTransformerForClass([AIQuestionOption class]), @"")
 
 @end

@@ -53,12 +53,30 @@ class AIQuestionViewController: AIBaseViewController {
   // MAKR: debug
   // Data
   private let questionSet = debugQuestionSet
-  private let questionIndex: Int = 0
+  private var currentIndex: Int = 0 {
+    didSet {
+      guard let currentQuestion = currentQuestion else { return }
 
-  override func viewDidLoad() {
-    super.viewDidLoad()
+      checkingArray.removeAll()
+      for _ in currentQuestion.options {
+        checkingArray.append(false)
+      }
 
-    // MARK: get question set
+      updateQuestionHeaderView(withIndex: currentIndex)
+      questionView.reloadData()
+    }
+  }
+  private var currentQuestion: AIQuestion? {
+    get {
+      guard let questions = questionSet.questions, questions.count > currentIndex else { return nil }
+      return questions[currentIndex]
+    }
+  }
+  private var checkingArray = [Bool]()
+  private var heightCell = AIQuestionOptionTableViewCell(frame: CGRect.zero)
+
+  override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+    super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
 
     // questionInfoView
     questionInfoView.answerAction = {
@@ -68,15 +86,31 @@ class AIQuestionViewController: AIBaseViewController {
       sself.questionInfoView.isHidden = true
       sself.questionView.isHidden = false
 
-      sself.updateQuestionHeaderView(withIndex: 0)
+      sself.currentIndex = 0
     }
+
+    // questionView
+    questionView.delegate = self
+    questionView.dataSource = self
+    questionView.register(AIQuestionOptionTableViewCell.self)
+  }
+
+  required init?(coder aDecoder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
+
+    // MARK: get question set
+
+    // questionInfoView
     view.addSubview(questionInfoView)
     questionInfoView.update(with: questionSet)
 
     // questionView
     questionView.isHidden = true
-    questionView.delegate = self
-    questionView.dataSource = self
+    questionView.separatorStyle = .none
     view.addSubview(questionView)
   }
 
@@ -103,15 +137,47 @@ fileprivate extension AIQuestionViewController {
 
     questionView.tableHeaderView = questionHeaderView
   }
+
+  func selectOption(index: Int) {
+    guard checkingArray.count > index else { return }
+    checkingArray[index] = !checkingArray[index]
+
+    let indexPath = IndexPath(row: index, section: 0)
+    questionView.reloadRows(at: [indexPath], with: .none)
+  }
 }
 
 // MARK: tableview delegate & datasource
 extension AIQuestionViewController: UITableViewDelegate, UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 0
+    guard let currentQuestion = currentQuestion else { return 0 }
+    return currentQuestion.options.count
   }
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    return UITableViewCell()
+    guard let currentQuestion = currentQuestion,
+      currentQuestion.options.count > indexPath.row,
+      checkingArray.count > indexPath.row else { return UITableViewCell() }
+
+    let cell: AIQuestionOptionTableViewCell = tableView.dequeue(indexPath)
+    cell.update(with: currentQuestion.options[indexPath.row], index: indexPath.row, toCheck: checkingArray[indexPath.row])
+    return cell
+  }
+
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    tableView.deselectRow(at: indexPath, animated: false)
+
+    guard let currentQuestion = currentQuestion, currentQuestion.options.count > indexPath.row else { return }
+    selectOption(index: indexPath.row)
+  }
+
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    guard let currentQuestion = currentQuestion,
+      currentQuestion.options.count > indexPath.row,
+      checkingArray.count > indexPath.row else { return 0 }
+
+    heightCell.update(with: currentQuestion.options[indexPath.row], index: indexPath.row, toCheck: checkingArray[indexPath.row])
+
+    return heightCell.sizeThatFits(view.bounds.size).height
   }
 }
