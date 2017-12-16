@@ -36,7 +36,7 @@
 		71C5469D1FE52DF400F4C3EF /* AIQuestionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C5469C1FE52DF400F4C3EF /* AIQuestionHeaderView.swift */; };
 		71C546A01FE53F7000F4C3EF /* AIQuestionOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C5469F1FE53F7000F4C3EF /* AIQuestionOptionTableViewCell.swift */; };
 		71C546A21FE549BE00F4C3EF /* ReusableIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C546A11FE549BE00F4C3EF /* ReusableIdentifier.swift */; };
-		71DD44EE1FE2D02E0000A0DA /* AITest.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DD44ED1FE2D02E0000A0DA /* AITest.m */; };
+		71C546A51FE55B4A00F4C3EF /* AITest.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C546A41FE55B4A00F4C3EF /* AITest.m */; };
 		71DD44F31FE4D6E20000A0DA /* DOUObject+DynamicProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DD44F21FE4D6E20000A0DA /* DOUObject+DynamicProperty.m */; };
 /* End PBXBuildFile section */
 
@@ -100,8 +100,8 @@
 		71C5469C1FE52DF400F4C3EF /* AIQuestionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIQuestionHeaderView.swift; sourceTree = "<group>"; };
 		71C5469F1FE53F7000F4C3EF /* AIQuestionOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIQuestionOptionTableViewCell.swift; sourceTree = "<group>"; };
 		71C546A11FE549BE00F4C3EF /* ReusableIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableIdentifier.swift; sourceTree = "<group>"; };
-		71DD44EC1FE2D02E0000A0DA /* AITest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AITest.h; sourceTree = "<group>"; };
-		71DD44ED1FE2D02E0000A0DA /* AITest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AITest.m; sourceTree = "<group>"; };
+		71C546A31FE55B4A00F4C3EF /* AITest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AITest.h; sourceTree = "<group>"; };
+		71C546A41FE55B4A00F4C3EF /* AITest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AITest.m; sourceTree = "<group>"; };
 		71DD44F11FE4D6E20000A0DA /* DOUObject+DynamicProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DOUObject+DynamicProperty.h"; sourceTree = "<group>"; };
 		71DD44F21FE4D6E20000A0DA /* DOUObject+DynamicProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DOUObject+DynamicProperty.m"; sourceTree = "<group>"; };
 		AEA78D0C7BBF014A5071895B /* Pods_aida.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aida.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,6 +168,8 @@
 			children = (
 				71A831EF1FE2BF7900FA743D /* Question */,
 				71A831711FE001C800FA743D /* AppDelegate.swift */,
+				71C546A31FE55B4A00F4C3EF /* AITest.h */,
+				71C546A41FE55B4A00F4C3EF /* AITest.m */,
 				71A831751FE001C800FA743D /* Main.storyboard */,
 				71A831781FE001C800FA743D /* Assets.xcassets */,
 				71A8317A1FE001C800FA743D /* LaunchScreen.storyboard */,
@@ -299,8 +301,6 @@
 				71A831F01FE2BFC600FA743D /* AIQuestionViewController.swift */,
 				71A831F21FE2C34100FA743D /* AIQuestionInfoView.swift */,
 				71C5469C1FE52DF400F4C3EF /* AIQuestionHeaderView.swift */,
-				71DD44EC1FE2D02E0000A0DA /* AITest.h */,
-				71DD44ED1FE2D02E0000A0DA /* AITest.m */,
 				71C5469E1FE53F5A00F4C3EF /* cells */,
 			);
 			path = Question;
@@ -496,6 +496,7 @@
 				71A831D31FE2B60600FA743D /* DOUAPIClientExtension.swift in Sources */,
 				71A831971FE0094300FA743D /* AIBaseNavigationViewController.swift in Sources */,
 				71DD44F31FE4D6E20000A0DA /* DOUObject+DynamicProperty.m in Sources */,
+				71C546A51FE55B4A00F4C3EF /* AITest.m in Sources */,
 				71A831F11FE2BFC600FA743D /* AIQuestionViewController.swift in Sources */,
 				71A831951FE003D100FA743D /* AIBaseViewController.swift in Sources */,
 				71A831931FE003B900FA743D /* AIBaseTabBarController.swift in Sources */,
@@ -511,7 +512,6 @@
 				71A831EB1FE2BCF200FA743D /* DOUObjectArray+Builder.m in Sources */,
 				71A831E01FE2B61300FA743D /* AIQuestion.m in Sources */,
 				71C546A01FE53F7000F4C3EF /* AIQuestionOptionTableViewCell.swift in Sources */,
-				71DD44EE1FE2D02E0000A0DA /* AITest.m in Sources */,
 				71C546A21FE549BE00F4C3EF /* ReusableIdentifier.swift in Sources */,
 				71A831B11FE0188F00FA743D /* UserAccount.m in Sources */,
 				71A831C91FE1737000FA743D /* DOUDateUtils.m in Sources */,
