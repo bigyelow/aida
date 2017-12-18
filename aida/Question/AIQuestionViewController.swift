@@ -14,12 +14,14 @@ class AIQuestionViewController: AIBaseViewController {
   private let questionInfoView = AIQuestionInfoView()
   private let questionView = UITableView(frame: CGRect.zero, style: .plain)
   private let questionHeaderView = AIQuestionHeaderView(frame: CGRect.zero)
+  private let questionBottomView = AIQuestionBottomView(frame: CGRect.zero)
 
   // MAKR: debug
   // Data
   private let questionSet = testQuestionSet
   private var checkingArray = [Bool]()
   private var heightCell = AIQuestionOptionTableViewCell(frame: CGRect.zero)
+  private var currentPoint: Int = 0
   private var currentQuestion: AIQuestion? {
     get {
       guard let questions = questionSet.questions, questions.count > currentIndex else { return nil }
@@ -30,18 +32,28 @@ class AIQuestionViewController: AIBaseViewController {
     didSet {
       guard let currentQuestion = currentQuestion else { return }
 
+      // update checkingArray
       checkingArray.removeAll()
       for _ in currentQuestion.options {
         checkingArray.append(false)
       }
 
+      // update headerView
       updateQuestionHeaderView(index: currentIndex)
+
+      // update questionView
       questionView.reloadData()
+
+      // update bottomView
+      questionBottomView.enableConfirmation(enable: false)
+      questionBottomView.updatePoint(point: 0)
     }
   }
 
   override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
     super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+
+//    edgesForExtendedLayout = UIRectEdge.init(rawValue: 0)
 
     // questionInfoView
     questionInfoView.answerAction = {
@@ -50,6 +62,7 @@ class AIQuestionViewController: AIBaseViewController {
 
       sself.questionInfoView.isHidden = true
       sself.questionView.isHidden = false
+      sself.questionBottomView.isHidden = false
 
       sself.currentIndex = 0
     }
@@ -77,6 +90,10 @@ class AIQuestionViewController: AIBaseViewController {
     questionView.isHidden = true
     questionView.separatorStyle = .none
     view.addSubview(questionView)
+
+    // bottomView
+    questionBottomView.isHidden = true
+    view.addSubview(questionBottomView)
   }
 
   override func viewDidLayoutSubviews() {
@@ -88,7 +105,13 @@ class AIQuestionViewController: AIBaseViewController {
       questionInfoView.frame.size = CGSize(width: questionInfoWidth, height: questionInfoHeight)
       questionInfoView.center = view.center
 
-      questionView.frame = view.bounds
+      // questionBottomView
+      let bottomSize = questionBottomView.sizeThatFits(view.bounds.size)
+      questionBottomView.frame.origin = CGPoint(x: 0, y: view.bounds.size.height - bottomSize.height)
+      questionBottomView.frame.size = bottomSize
+
+      questionView.frame.size = CGSize(width: view.bounds.size.width, height: view.bounds.size.height - bottomSize.height)
+      questionView.frame.origin = CGPoint.zero
     }
   }
 }
@@ -111,6 +134,13 @@ fileprivate extension AIQuestionViewController {
 
     let indexPath = IndexPath(row: index, section: 0)
     questionView.reloadRows(at: [indexPath], with: .none)
+
+    if checkingArray.contains(true) && !questionBottomView.confirmationEnabled {
+      questionBottomView.enableConfirmation(enable: true)
+    }
+    else if !checkingArray.contains(true) && questionBottomView.confirmationEnabled {
+      questionBottomView.enableConfirmation(enable: false)
+    }
   }
 }
 
