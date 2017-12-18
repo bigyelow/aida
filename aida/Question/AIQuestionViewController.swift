@@ -8,41 +8,6 @@
 
 import UIKit
 
-// MARK: debug
-private let questionOption0 = AIQuestionOption(dictionary: ["id":"1",
-                                                            "refer_id": "1",
-                                                            "text": "神秀"])
-private let questionOption1 = AIQuestionOption(dictionary: ["id":"2",
-                                                            "refer_id": "1",
-                                                            "text": "唐曾"])
-private let questionOption2 = AIQuestionOption(dictionary: ["id":"3",
-                                                            "refer_id": "1",
-                                                            "text": "弘仁"])
-private let questionOption3 = AIQuestionOption(dictionary: ["id":"4",
-                                                            "refer_id": "1",
-                                                            "text": "慧能"])
-private let answer = AIAnswer(dictionary: ["id": "1",
-                                           "refer_id": "1",
-                                           "type": 0,
-                                           "value": ["4"]])
-
-private let question = AIQuestion(dictionary: ["id": "1",
-                                               "title": "",
-                                               "description": "身是菩提树，心如明镜台。是谁写的？",
-                                               "time_limit": 30,
-                                               "index": 1,
-                                               "type": 0,
-                                               "answer": answer!.dictionary,
-                                               "options": [questionOption0!.dictionary,
-                                                           questionOption1!.dictionary,
-                                                           questionOption2!.dictionary,
-                                                           questionOption3!.dictionary],
-                                               "point": 2])
-private let debugQuestionSet = AIQuestionSet(dictionary: ["id": "1",
-                                                          "start_time": "2017-12-17 12:00:00",
-                                                          "end_time": "2017-12-17 13:00:00",
-                                                          "questions": [question!.dictionary]])!
-
 fileprivate let questionInfoHorizontalMargin: CGFloat = 15
 class AIQuestionViewController: AIBaseViewController {
   // UI
@@ -52,7 +17,7 @@ class AIQuestionViewController: AIBaseViewController {
 
   // MAKR: debug
   // Data
-  private let questionSet = debugQuestionSet
+  private let questionSet = testQuestionSet
   private var checkingArray = [Bool]()
   private var heightCell = AIQuestionOptionTableViewCell(frame: CGRect.zero)
   private var currentQuestion: AIQuestion? {
