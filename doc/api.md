@@ -38,6 +38,7 @@
 - 注册分为两步
 	1. 输入手机号，通过短信获取验证码
 	2. 使用验证码获取 `OAuth`
+	3. 使用 `token` 注册用户，带着 `password`
 
 ```
 1. 获取验证码
@@ -51,7 +52,7 @@ phone: String
 response: nil
 
 2. 使用验证码获取 OAuth
-post auth2/token
+post auth2/verification_code
 
 parameters:
 {
@@ -60,6 +61,15 @@ verification_code: String,
 }
 
 response: OAuth
+
+3. 使用上面的 OAuth
+post auth2/registeration
+
+@require_login
+parameters:
+{
+password: String（必须）
+}
 
 ```
 
