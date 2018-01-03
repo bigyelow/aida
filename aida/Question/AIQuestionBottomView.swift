@@ -17,6 +17,7 @@ class AIQuestionBottomView: UIView {
   var confirmationEnabled: Bool {
     return confirmButton.isEnabled
   }
+  var confirmAction: (() -> Void)?
 
   private let confirmButton = UIButton(type: .system)
   private let pointLabel = UILabel(frame: CGRect.zero)
@@ -27,6 +28,7 @@ class AIQuestionBottomView: UIView {
     confirmButton.setTitle("确定", for: .normal)
     confirmButton.setTitle("确定", for: .disabled)
     confirmButton.setTitleColor(UIColor.gray, for: .disabled)
+    confirmButton.addTarget(self, action: #selector(confirmButtonClicked), for: .touchUpInside)
     addSubview(confirmButton)
 
     pointLabel.text = "0分"
@@ -65,5 +67,9 @@ class AIQuestionBottomView: UIView {
   func updatePoint(point: Int) {
     pointLabel.text = "\(point)分"
     setNeedsLayout()
+  }
+
+  @objc private func confirmButtonClicked() {
+    confirmAction?()
   }
 }

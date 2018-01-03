@@ -24,7 +24,7 @@ private let questionOption03 = AIQuestionOption(dictionary: ["id":"4",
 private let answer0 = AIAnswer(dictionary: ["id": "1",
                                             "refer_id": "1",
                                             "type": 0,
-                                            "value": ["4"]])
+                                            "value": ["4", "1"]])
 
 private let question0 = AIQuestion(dictionary: ["id": "1",
                                                 "title": "",
@@ -40,22 +40,22 @@ private let question0 = AIQuestion(dictionary: ["id": "1",
                                                 "point": 2])
 
 // MARK: question1
-private let questionOption10 = AIQuestionOption(dictionary: ["id":"1",
+private let questionOption10 = AIQuestionOption(dictionary: ["id":"5",
                                                              "refer_id": "2",
                                                              "text": "中国"])
-private let questionOption11 = AIQuestionOption(dictionary: ["id":"2",
+private let questionOption11 = AIQuestionOption(dictionary: ["id":"6",
                                                              "refer_id": "2",
                                                              "text": "美国"])
-private let questionOption12 = AIQuestionOption(dictionary: ["id":"3",
+private let questionOption12 = AIQuestionOption(dictionary: ["id":"7",
                                                              "refer_id": "2",
                                                              "text": "俄罗斯"])
-private let questionOption13 = AIQuestionOption(dictionary: ["id":"4",
+private let questionOption13 = AIQuestionOption(dictionary: ["id":"8",
                                                              "refer_id": "2",
                                                              "text": "加拿大"])
 private let answer1 = AIAnswer(dictionary: ["id": "2",
                                             "refer_id": "2",
                                             "type": 0,
-                                            "value": ["4"]])
+                                            "value": ["7"]])
 
 private let question1 = AIQuestion(dictionary: ["id": "2",
                                                 "title": "",

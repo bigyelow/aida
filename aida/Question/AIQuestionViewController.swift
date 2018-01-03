@@ -46,7 +46,6 @@ class AIQuestionViewController: AIBaseViewController {
 
       // update bottomView
       questionBottomView.enableConfirmation(enable: false)
-      questionBottomView.updatePoint(point: 0)
     }
   }
 
@@ -71,6 +70,40 @@ class AIQuestionViewController: AIBaseViewController {
     questionView.delegate = self
     questionView.dataSource = self
     questionView.register(AIQuestionOptionTableViewCell.self)
+
+    // questionBottomView
+    questionBottomView.confirmAction = {
+      [weak self] in
+      guard let sself = self else { return }
+      guard let currentQuestion = sself.currentQuestion else { return }
+
+      var selectOptionIDs = Set<String>()
+      for (index, v) in sself.checkingArray.enumerated() {
+        if v == false {
+          continue
+        }
+
+        guard index < currentQuestion.options.count else { return }
+        guard let id = currentQuestion.options[index].identifier else { return }
+
+        if selectOptionIDs.contains(id) {
+          assert(false, "Two option ids should not be the same!")
+          return
+        }
+
+        selectOptionIDs.insert(id)
+      }
+
+      let answersIDs = Set(currentQuestion.answer.value)
+      if selectOptionIDs == answersIDs {  // Right answer, update point, goto next question
+        sself.currentPoint += currentQuestion.point
+        sself.questionBottomView.updatePoint(point: sself.currentPoint)
+        sself.currentIndex += 1
+      }
+      else {
+        print("error")
+      }
+    }
   }
 
   required init?(coder aDecoder: NSCoder) {
