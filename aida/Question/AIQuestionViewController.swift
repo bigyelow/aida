@@ -53,7 +53,7 @@ class AIQuestionViewController: AIBaseViewController {
   override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
     super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
 
-//    edgesForExtendedLayout = UIRectEdge.init(rawValue: 0)
+    edgesForExtendedLayout = UIRectEdge.init(rawValue: 0)
 
     // questionInfoView
     questionInfoView.answerAction = {
